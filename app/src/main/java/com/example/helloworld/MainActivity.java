@@ -17,13 +17,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause(){
         super.onPause();
-        Log.d("MainActivity", "App is logged out");
+        Log.d("MainActivity", "Pausing the app");
 
     }
     @Override
     protected void onResume(){
         super.onResume();
-        Log.d("MainActivity", "App is started");
+        Log.d("MainActivity", "Now resuming the application");
 
     }
 }
