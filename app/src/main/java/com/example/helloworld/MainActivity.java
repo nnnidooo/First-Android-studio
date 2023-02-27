@@ -11,9 +11,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("MainActivity", "App up and running");
+
+    }
+
+    @Override
+    protected void onPause(){
         super.onPause();
-        Log.d("MainActivity", "On pause");
+        Log.d("MainActivity", "App is logged out");
+
+    }
+    @Override
+    protected void onResume(){
         super.onResume();
-        Log.d("MainActivity", "On resume");
+        Log.d("MainActivity", "App is started");
+
     }
 }
